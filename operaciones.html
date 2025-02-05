@@ -1,33 +1,25 @@
-<h2>Multiplicar dos números</h2>
-<form id="FormularioMultiplicacion">
-    <label for="multiplicando1">Ingresa el primer número</label>
-    <input type="number" id="multiplicando1" required>
-    <label for="multiplicando2">Ingresa el segundo número</label>
-    <input type="number" id="multiplicando2" required>
-    <button type="button" onclick="RealizarMultiplicacion()">Multiplicar</button>
-</form>
-<h2>El resultado de la multiplicación es:</h2>
-<p id="resultadoMultiplicacion">--</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header> 
+        <h1> Programacion Web </h1>
+    </header>
+    <h2> Sumar dos numeros </h2>
+    <form action="">
+        <label for="numero1"> Ingresa el primer numero </label>
+        <input type="number" id="numero1" required>
 
-<h2>Restar dos números</h2>
-<form id="FormularioResta">
-    <label for="minuendo">Ingresa el numero a restar</label>
-    <input type="number" id="minuendo" required>
-    <label for="sustraendo">Ingresa el numero por cual restar </label>
-    <input type="number" id="sustraendo" required>
-    <button type="button" onclick="RealizarResta()">Restar</button>
-</form>
-<h2>El resultado de la resta es:</h2>
-<p id="resultadoResta">--</p>
+        <label for="numero2"> Ingresa el primer numero </label>
+        <input type="number" id="numero2" required>
 
-<h2>Dividir dos números</h2>
-<form id="FormularioDivision">
-    <label for="dividendo">Ingresa un numero</label>
-    <input type="number" id="dividendo" required>
-    <label for="divisor">Ingresa el divisor</label>
-    <input type="number" id="divisor" required>
-    <button type="button" onclick="RealizarDivision()">Dividir</button>
-</form>
-<h2>El resultado de la división es:</h2>
-<p id="resultadoDivision">--</p>
-<script src="operaciones.js"></script>
+        <button type="button" onclick="RealizarSuma()"> Sumar </button>
+    </form>
+    <h2> El resultado de la suma es: </h2>
+    <p id="resultado"> -- </p>
+    <script src="suma.js"></script>
