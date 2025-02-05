@@ -1,72 +1,83 @@
-/* Reset Básico */
-body, h1, h2, h3, p, ul, li, a, button {
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f9;
+    background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
-    padding: 0 10%;
 }
 
-/* Header */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2c3e50;
+header {
+    background-color: green;
     color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.foto img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #f4f4f9;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.info-personal {
-    text-align: right;
+header h2 {
+    margin: 5px 0 10px;
+    font-size: 1.5em;
 }
 
-.info-personal a {
-    color: #3498db;
+header p {
+    margin: 0;
+    font-size: 1em;
+}
+
+header a {
+    color: #ffcc00;
     text-decoration: none;
 }
 
-.info-personal a:hover {
+header a:hover {
     text-decoration: underline;
 }
 
-/* Secciones principales */
-.main section {
-    background: white;
-    margin: 20px 0;
+/* Main */
+main {
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.main h2 {
-    color: #2c3e50;
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.habilidades .habilidad {
+.experiencia-item h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.habilidad {
     display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    background: #3498db;
+    margin: 5px 10px 10px 0;
+    padding: 8px 15px;
+    background-color: #4CAF50;
     color: white;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 0.9em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.habilidad:hover {
+    background-color: #45a049;
 }
 
 /* Botones */
@@ -75,26 +86,27 @@ body {
     margin-top: 20px;
 }
 
-.botones button {
-    background-color: #2c3e50;
+button {
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
     margin: 5px;
-    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.botones button:hover {
-    background-color: #3498db;
+button:hover {
+    background-color: #45a049;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    color: #555;
-    font-size: 14px;
+button:focus {
+    outline: none;
+}
+
+a button {
+    text-decoration: none;
+    color: white;
 }
